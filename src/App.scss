@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "headingFont";
+  src: url("./styles/fonts/Playfair/Playfair_Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "bodyFont";
+  src: url("./styles/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+p {
+  margin-bottom: 0;
+}
+
+// Fonts
+$body_font: "bodyFont";
+$heading_font: "headingFont";
+
+// Colors
+$gradient_color: linear-gradient(280deg, #c80083 30%, #93266d);
+$main_color: #c80083;
+$main_color_light: #c8008342;
+$main_bg_color: rgb(255 245 251 / 33%);
+$paragraph_color: #4d4d4d;
+$secondary_color: #fff;
+$secondary_light_color: #f7f7f7;
+
+//Borders
+$radius_four: 4px;
+$light_border: #d4d4d4;
+
+//Shadows
+$shadow: 2px 2px 5px 0px #00000029;
+
+%banner_heading {
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 40px;
+  font-family: $heading_font;
+}
+
+%section_heading {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 40px;
+  font-family: $heading_font;
+}
+
+%body_font {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: $body_font;
+  color: $paragraph_color;
+}
+
+%button_style_gradient {
+  background: $gradient_color;
+  color: $secondary_color;
+  border: none;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+%common_ul_style {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  @extend %body_font;
+}
+
+.container {
+  max-width: 1560px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon-large {
+  font-size: 18px;
+}

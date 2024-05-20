@@ -1,0 +1,83 @@
+@import "../../App.scss";
+
+.navigation-row {
+  border-top: 1px solid $light_border;
+  border-bottom: 1px solid $light_border;
+
+  .browse-categories {
+    button {
+      @extend %button_style_gradient;
+
+      i {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .nav-items-wrapper {
+    ul {
+      @extend %common_ul_style;
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        padding: 10px 0px;
+
+        a {
+          color: $paragraph_color;
+        }
+
+        .nav-item-dropdown {
+          position: absolute;
+          width: 200px;
+          top: 40px;
+          left: 0;
+          padding: 20px;
+          background: $secondary_light_color;
+          box-shadow: $shadow;
+          opacity: 0;
+
+          ul {
+            display: block;
+
+            li {
+              margin-bottom: 15px;
+              padding: 0;
+
+              &:last-child {
+                margin-bottom: 0px;
+              }
+
+              a {
+                transition: 0.3s all;
+                display: block;
+
+                &:hover {
+                  color: $main_color;
+                }
+              }
+            }
+          }
+        }
+
+        &:hover {
+          .nav-item-dropdown {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-contact {
+    i {
+      font-size: 32px;
+      color: $main_color;
+    }
+
+    h6 {
+      font-size: 18px;
+      color: $main_color;
+    }
+  }
+}
