@@ -1,0 +1,21 @@
+@import "../../App.scss";
+
+.category-section {
+  .category-slide-item {
+    margin: 0px 15px;
+  }
+}
+
+.category-slide-box {
+  background: $secondary_light_color;
+  padding: 40px 20px;
+  border-radius: $radius_twenty;
+
+  h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 20px 0px 0px;
+    color: $paragraph_color;
+    font-family: $heading_font;
+  }
+}
