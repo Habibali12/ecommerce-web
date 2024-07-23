@@ -1,0 +1,21 @@
+@import "../../App.scss";
+
+.product-slider-banner {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 40px;
+  border-radius: $radius_twenty;
+
+  h4 {
+    color: $secondary_color;
+    font-family: $heading_font;
+    font-size: 52px;
+    line-height: 48px;
+  }
+
+  a {
+    @extend %button_style_gradient;
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../App.scss";
+
+.category-filter {
+  background: $secondary_light_color;
+  padding: 30px 20px;
+  border-radius: $radius_twenty;
+
+  .category-filter-title {
+    font-size: 18px;
+    margin-bottom: 22px;
+    font-weight: 600;
+  }
+
+  .filter-categories {
+    .filter-category-box {
+      border: 1px solid #dbdbdb;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: $radius_four;
+
+      &:first-child {
+        margin-top: 0px;
+      }
+
+      .category-image {
+        width: 100%;
+        max-width: 60px;
+        border-radius: $radius_four;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .category-title {
+        h6 {
+          margin-bottom: 0;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

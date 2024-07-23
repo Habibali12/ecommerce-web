@@ -1,0 +1,25 @@
+@import "../../App.scss";
+
+.product-tabs {
+  ul {
+    display: flex;
+    justify-content: end;
+
+    li {
+      margin-right: 25px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+
+      a {
+        color: $paragraph_color;
+        transition: 0.3s all;
+
+        &:hover {
+          color: $main_color;
+        }
+      }
+    }
+  }
+}

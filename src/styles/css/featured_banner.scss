@@ -1,0 +1,22 @@
+@import "../../App.scss";
+
+.featured-banner-box {
+  padding: 0px 60px 0px 30px;
+  height: 280px;
+  background: center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: $radius_twenty;
+
+  .heading-featured-box {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: $heading_font;
+  }
+
+  a {
+    @extend %button_style_gradient;
+  }
+}
